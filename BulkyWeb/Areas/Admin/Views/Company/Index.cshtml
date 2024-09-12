@@ -1,0 +1,38 @@
+﻿
+<partial name="_Notification" />
+<div class="card shadow border-0 mt4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center text-white">
+                <h1>Company List</h1>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 text-end pb-2">
+                    <a asp-controller="Company" asp-action="Upsert" class="btn btn-primary"><i class="bi bi-plus"></i>Add Product</a>
+                </div>
+            </div>
+            <table id="tblData" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Company Name</th>
+                        <th>Company StreetAddress</th>
+                        <th>Company City</th>
+                        <th>Company State</th>
+                        <th>Company PostalCode</th>
+                        <th>Company PhoneCode</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/Company.js"></script>
+}
